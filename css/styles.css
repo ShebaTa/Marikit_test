@@ -1,0 +1,394 @@
+body {
+  position: relative;
+  background-color: #272733;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato Heavy', sans-serif;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+.main-menu {
+  position: absolute;
+  top: 0;
+  padding: 40px 0;
+  background-color: rgba(16, 16, 29, 0.9);
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  margin: 0 19.53125%;
+  z-index: 10;
+}
+
+.container__title {
+  font-size: 36px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.container__title_purple {
+  color: #272733;
+}
+
+.container__title_blue {
+  color: #3e9cdc;
+}
+
+.container__text {
+  font-size: 18px;
+  color: #bbb;
+  margin: 30px auto;
+}
+
+.container__text_purple {
+  color: #272733;
+  font-size: 20px;
+  white-space: pre-line;
+  margin: 40px 0;
+  font-family: 'Lato';
+}
+
+.container__text_purple-bold {
+  font-weight: 700;
+}
+
+.container__button {
+  background-color: #fff;
+  color: #2a2b30;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 16px 57px;
+  border: 1px solid #6f6d7b;
+  border-radius: 4px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.container__button:hover {
+  background-color: #3e9cdc;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo__text {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.logo__text_blue {
+  color: #3e9cdc;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  margin-left: 60px;
+}
+
+.navbar__link:hover {
+  color: #3e9cdc;
+}
+
+.main-screen {
+  width: 100%;
+  height: 850px;
+  background-image: url(../images/bg-1.png);
+  background-size: cover;
+}
+
+.main-screen__inner {
+  padding: 170px 0 0;
+  width: 100%;
+}
+
+.main-screen__title_purple {
+  font-size: 40px;
+  line-height: 64px;
+  color: #272733;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+.reservation {
+  position: relative;
+  height: 880px;
+  background-image: url(../images/map.png);
+}
+
+.reservation__bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.reservation__inner {
+  padding: 120px 0;
+  position: relative;
+}
+
+form {
+  width: 100%;
+}
+
+.system {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  background-color: #dfdfe1;
+  height: 50px;
+  width: 110%;
+  color: #3d4050;
+  padding: 0 15px;
+  border: none;
+  border-radius: 3px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.system::after {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  z-index: 1;
+  margin-top: -3px;
+}
+
+.system:hover {
+  color: #dfdfe1;
+  background-color: #3d4050;
+}
+
+.system__item {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+.system__item:hover {
+  color: #3e9cdc;
+}
+
+.btn-group__item {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  background-color: #dfdfe1;
+  height: 50px;
+  color: #3d4050;
+  width: 100%;
+  padding: 0 15px;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.btn-group__item:hover {
+  color: #dfdfe1;
+  background-color: #3d4050;
+}
+
+.btn-group__item-nopad {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  background-color: #dfdfe1;
+  height: 50px;
+  color: #3d4050;
+  width: 100%;
+  padding: 0;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.btncontainer {
+  width: 30%;
+}
+
+.slidecontainer {
+  width: 68%;
+  margin-top: -8px;
+}
+
+.slidecontainer__text {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lato';
+}
+
+.filecontainer {
+  width: 30%;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 7px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3e9cdc;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3e9cdc;
+  cursor: pointer;
+}
+
+.inputfile {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  background-color: #dfdfe1;
+  height: 50px;
+  color: #3d4050;
+  width: 100%;
+  padding: 0 15px;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  color: #dfdfe1;
+  background-color: #3d4050;
+}
+
+.center-box {
+  display: flex;
+  justify-content: center;
+}
+
+.send-button {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  height: 50px;
+  width: 110%;
+  padding: 0 15px;
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  border: 5px solid #286690;
+  background-color: #3e9cdc;
+  border-radius: 50%;
+  margin: 70px 0;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots {
+  width: 109px;
+  height: 7px;
+  background-image: url(../images/dot.png);
+  background-repeat: repeat-x;
+  background-position-x: 25%;
+}
+
+.footer {
+  font-family: 'Lato';
+  padding-top: 35px;
+  width: 100%;
+  height: 45px;
+  background-color: #3d4050;
+}
